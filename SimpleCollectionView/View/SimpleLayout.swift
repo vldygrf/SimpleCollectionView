@@ -41,10 +41,15 @@ final class SimpleLayout: UICollectionViewFlowLayout {
     override func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let attributes = super.finalLayoutAttributesForDisappearingItem(at: itemIndexPath)
         
-        guard let collectionView = collectionView else { return attributes }
-        
         if (indexPathToRemove == itemIndexPath) {
-            attributes?.transform = CGAffineTransform(translationX: collectionView.frame.size.width, y: 0)
+            guard
+                let collectionView = collectionView,
+                let cell = collectionView.cellForItem(at: itemIndexPath)
+            else {
+                return attributes
+            }
+            
+            attributes?.transform = cell.transform
         }
         
         return attributes
