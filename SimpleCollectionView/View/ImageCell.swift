@@ -47,8 +47,9 @@ final class ImageCell: UICollectionViewCell {
             DispatchQueue.global().async {
                 guard let value = self.value else { return }
                 
-                value.get { (imageData, error) in
+                value.get { [weak self] (imageData, error) in
                     guard
+                        let self = self,
                         error == nil,
                         self.value?.path == value.path,
                         let imageData = imageData,
@@ -68,6 +69,6 @@ final class ImageCell: UICollectionViewCell {
     }
     
     func didLoaded() -> Bool {
-        return self.imageView.image != nil
+        return imageView.image != nil
     }
 }
