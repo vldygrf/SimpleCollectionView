@@ -68,7 +68,12 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? ImageCell, cell.didLoaded() else { return }
+        guard
+            let cell = collectionView.cellForItem(at: indexPath) as? ImageCell,
+            cell.didLoaded()
+        else {
+            return
+        }
         
         UIView.animate(withDuration: 0.3) {
             cell.transform = CGAffineTransform(translationX: collectionView.frame.size.width, y: 0)
