@@ -48,6 +48,7 @@
 		F5C66FAC2630476700FAEFF3 = {
 			isa = PBXGroup;
 			children = (
+				F52622282636E7DB002D5594 /* README */,
 				F5C66FB72630476700FAEFF3 /* SimpleCollectionView */,
 				F5C66FB62630476700FAEFF3 /* Products */,
 			);
@@ -64,7 +65,6 @@
 		F5C66FB72630476700FAEFF3 /* SimpleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				F52622282636E7DB002D5594 /* README */,
 				F5C66FB82630476700FAEFF3 /* AppDelegate.swift */,
 				F5D6E95C263553E3006B4205 /* Model */,
 				F5D6E95E26355438006B4205 /* View */,
