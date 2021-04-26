@@ -14,8 +14,8 @@ final class SimpleLayout: UICollectionViewFlowLayout {
     override func prepare() {
         guard let collectionView = collectionView else { return }
         
-        let numOfColumns: CGFloat = 1
-        let size: CGFloat = (collectionView.frame.size.width - (numOfColumns * spacing * 2) / numOfColumns)
+        let numOfColumns: CGFloat = 2
+        let size: CGFloat = (collectionView.frame.size.width - (spacing * (numOfColumns + 1))) / numOfColumns
         itemSize = CGSize(width: size, height: size)
         minimumInteritemSpacing = spacing
         minimumLineSpacing = spacing
