@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F51839ED2631A72500ADCE2B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51839EC2631A72500ADCE2B /* Image.swift */; };
 		F5196D9A26365191005639DA /* UIImage+Scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5196D9926365191005639DA /* UIImage+Scaling.swift */; };
+		F52622292636E7DB002D5594 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F52622282636E7DB002D5594 /* README */; };
 		F53EB9C526327BDD00779769 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB9C426327BDD00779769 /* ImageCell.swift */; };
 		F58F14932631766E003F78B0 /* SimpleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F14922631766E003F78B0 /* SimpleLayout.swift */; };
 		F5C66FB92630476700FAEFF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C66FB82630476700FAEFF3 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		F51839EC2631A72500ADCE2B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		F5196D9926365191005639DA /* UIImage+Scaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scaling.swift"; sourceTree = "<group>"; };
+		F52622282636E7DB002D5594 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		F53EB9C426327BDD00779769 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		F58F14922631766E003F78B0 /* SimpleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLayout.swift; sourceTree = "<group>"; };
 		F5C66FB52630476700FAEFF3 /* SimpleCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		F5C66FB72630476700FAEFF3 /* SimpleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F52622282636E7DB002D5594 /* README */,
 				F5C66FB82630476700FAEFF3 /* AppDelegate.swift */,
 				F5D6E95C263553E3006B4205 /* Model */,
 				F5D6E95E26355438006B4205 /* View */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52622292636E7DB002D5594 /* README in Resources */,
 				F5C66FC52630476800FAEFF3 /* LaunchScreen.storyboard in Resources */,
 				F5C66FC22630476800FAEFF3 /* Assets.xcassets in Resources */,
 			);
